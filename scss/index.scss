@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap");
+
+@import "header.scss";
+@import "footer.scss";
+
+// Обнуление: общие параметры
+@import "null.scss";
+
+// Миксины
+@import "mixins.scss";
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	width: 100%;
+}
