@@ -199,6 +199,38 @@
 		</section>
 
 
+		<section class="form-body">
+			<div class="container">
+				<p class="form-body__title">Узнать стоимость дома по своему проекту</p>
+
+
+				<form class="form" id="form1" method="post">
+					<div class="form__row">
+						<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Ваше имя" id="name" />
+						<input name="tel" type="tel" pattern="7[0-9]{3}-[0-9]{3}" class="validate[required,custom[onlyLetter],length[0,12]] feedback-input" placeholder="Ваш телефон" id="tel" />
+					</div>
+					<div class="form__row">
+						<textarea name="text" class="validate[required,length[6,300]] feedback-input feedback-input__textarea" id="comment" placeholder="Сообщение"></textarea>
+					</div>
+					<div class="form__row form__row_file">
+						<input type="file" class="file">
+						<p><img src="./img/file.svg" alt=""> Прикрепить файл</p>
+					</div>
+					<div class="form__row form__row_submit">
+						<p class="form__p">Нажимая на кнопку, я подтверждаю, что согласен на обработку моих персональных данных, а также с Пользовательским соглашением </p>
+						<button class="button">Отправить</button>
+					</div>
+				</form>
+
+
+			</div>
+
+			
+
+
+		</section>
+
+
 
 	</div>
 

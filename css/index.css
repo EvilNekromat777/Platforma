@@ -684,6 +684,102 @@
     line-height: 10px;
   }
 }
+.form-body {
+  background: #2d2d2d;
+  color: #ffffff;
+  padding: 130px 0px 136px 0px;
+}
+.form-body__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0px 0px 45px 0px;
+}
+
+.form {
+  max-width: 1230px;
+  width: 100%;
+}
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__row_file {
+  position: relative;
+}
+.form__row_file p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 33px 0px 0px 0px;
+}
+.form__row_file p img {
+  margin-right: 10px;
+}
+.form__row_submit {
+  margin: 70px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__p {
+  max-width: 520px;
+  color: #c4c4c4;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.feedback-input {
+  color: #f4f4f4;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #2d2d2d;
+  padding: 17px 13px 9px 0px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  max-width: 600px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 2px solid #c4c4c4;
+}
+.feedback-input__textarea {
+  max-width: 1230px;
+  height: 51px;
+  resize: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 2px solid #c4c4c4;
+  overflow: auto;
+}
+
+.feedback-input:focus {
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  border: 1px solid #c4c4c4;
+  color: #c4c4c4;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.file {
+  opacity: 0;
+  margin-top: 35px;
+  z-index: 2;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -856,4 +952,20 @@ body {
     font-size: 12px;
     padding: 10px 0px 0px 0px;
   }
+}
+.button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #2d2d2d;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 0px 0px 50px;
+}
+.button:hover {
+  background: #a09e9e;
 }

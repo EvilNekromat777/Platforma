@@ -5,6 +5,7 @@
 @import "swiper.scss";
 @import "indicators.scss";
 @import "exclusive.scss";
+@import "form.scss";
 
 // Обнуление: общие параметры
 @import "null.scss";
@@ -91,5 +92,22 @@ body {
 			font-size: 12px;
 			padding: 10px 0px 0px 0px;
 		}
+	}
+}
+
+.button {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: #ffffff;
+	color: #2d2d2d;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px 0px 0px 50px;
+	&:hover {
+		background: #a09e9e;
 	}
 }
