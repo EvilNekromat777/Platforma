@@ -1,0 +1,142 @@
+.exclusive {
+	&__wrapper {
+		padding: 170px 0px 249px 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__body {
+		flex: 0 1 48%;
+		margin: 0px 20px 0px 0px;
+	}
+	&__slider {
+		flex: 0 1 48%;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 110%;
+		max-width: 620px;
+	}
+	&__subtitle {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 150%;
+		padding: 40px 0px 0px 0px;
+	}
+	&__info {
+		padding: 5px 0px 0px 0px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+.item {
+	max-width: 320px;
+	flex: 0 1 48%;
+	width: 100%;
+	margin: 50px 60px 0px 0px;
+	&:nth-child(2) {
+		margin-right: 0;
+	}
+	&:nth-child(4) {
+		margin-right: 0;
+	}
+	&__text {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 150%;
+		color: #818181;
+		padding: 20px 0px 0px 0px;
+	}
+	&__more {
+		width: 120px;
+		height: 120px;
+		background: #2d2d2d;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			opacity: 1;
+			box-shadow: 3px 5px 8px rgb(0 0 0 / 50%);
+		}
+
+		p {
+			font-weight: bold;
+			font-size: 10px;
+			line-height: 12px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #ffffff;
+			max-width: 72px;
+		}
+	}
+}
+
+@media (max-width: 1555px) {
+	.item {
+		margin: 30px 5px 0px 0px;
+	}
+}
+@media (max-width: 1300px) {
+	.exclusive {
+		&__wrapper {
+			padding: 100px 0px 50px 0px;
+			flex-direction: column;
+		}
+		&__body {
+			flex: 0 1 100%;
+			margin: 0px 0px 0px 0px;
+		}
+		&__slider {
+			flex: 0 1 100%;
+		}
+		&__title {
+			margin: 0 auto;
+			max-width: 1000px;
+			text-align: center;
+		}
+		&__slider {
+			margin-top: 20px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.exclusive {
+		&__wrapper {
+			padding: 50px 0px 30px 0px;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__info {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__subtitle {
+			padding: 15px 0px 0px 0px;
+		}
+	}
+	.item {
+		max-width: 600px;
+		display: flex;
+		align-items: center;
+		margin: 20px 0px 0px 0px;
+		&__text {
+			padding: 0px 0px 0px 15px;
+		}
+		&_center {
+			justify-content: center;
+		}
+		&__more {
+			width: 80px;
+			height: 80px;
+
+			p {
+				font-size: 8px;
+				line-height: 10px;
+			}
+		}
+	}
+}
