@@ -3,6 +3,7 @@
 @import "header.scss";
 @import "footer.scss";
 @import "swiper.scss";
+@import "indicators.scss";
 
 // Обнуление: общие параметры
 @import "null.scss";
@@ -24,6 +25,7 @@ body {
 .container {
 	max-width: 1630px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 //=====================================================================================

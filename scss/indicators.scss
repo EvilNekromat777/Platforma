@@ -1,0 +1,140 @@
+.indicators {
+	background: #f6f6f6;
+	&__text-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 250px;
+	}
+	h4 {
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 110%;
+		white-space: nowrap;
+		margin: 0px 20px 0px 0px;
+	}
+	&__text-p {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 150%;
+		max-width: 790px;
+	}
+	&__banner {
+		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+			min-height: 500px;
+		}
+	}
+	&__info {
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		width: 100%;
+	}
+	&__info-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info-number {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+		span {
+			font-size: 96px;
+			line-height: 117px;
+			margin: 0px 20px 0px 0px;
+		}
+	}
+	&__info-description {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+//=========================================================
+
+@media (max-width: 1250px) {
+	.indicators {
+		&__info-number {
+			span {
+				font-size: 70px;
+				line-height: 90px;
+			}
+		}
+		&__info-item {
+			margin: 0px 20px 0px 0px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.indicators {
+		h4 {
+			font-size: 30px;
+		}
+		&__info-number {
+			span {
+				font-size: 50px;
+				line-height: 70px;
+			}
+		}
+		&__info-description {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.indicators {
+		h4 {
+			font-size: 25px;
+			white-space: normal;
+		}
+		&__text-wrapper {
+			flex-direction: column;
+			justify-content: center;
+			height: 170px;
+		}
+		p {
+			padding: 15px 0px 0px 0px;
+		}
+		&__info-number {
+			span {
+				font-size: 35px;
+				line-height: 40px;
+			}
+		}
+		&__info-description {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.indicators {
+		&__info-wrapper {
+			flex-direction: column;
+			padding: 0px 0px 0px 30px;
+		}
+		&__banner {
+			opacity: 0.7;
+			img {
+				min-height: 400px;
+			}
+		}
+		&__info-description {
+			font-size: 14px;
+			font-weight: 500;
+		}
+		&__text-wrapper {
+			height: auto;
+			padding: 20px 0px;
+		}
+	}
+}
